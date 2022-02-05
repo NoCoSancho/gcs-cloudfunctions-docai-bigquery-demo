@@ -15,6 +15,6 @@ gcloud config set project ${PROJECT_ID}
 
 echo "Creating source and dest DocAI GCS Buckets" 
 
-gsutil mb -b on -l ${REGION} gs://${PROJECT_ID}-_docai_source_bucket
+gsutil mb -b on -l ${REGION} gs://${PROJECT_ID}_docai_source_bucket
 
-gsutil mb -b on -l ${REGION} gs://${PROJECT_ID}-_docai_dest_bucket
+gsutil mb -b on -l ${REGION} gs://${PROJECT_ID}_docai_dest_bucket
