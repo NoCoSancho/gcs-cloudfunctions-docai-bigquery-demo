@@ -17,7 +17,7 @@ Since the cloud functions make synchronous DocumentAI parser calls, the input pd
 Need to create diagram
 Source bucket→cloud function→docai→destination bucket→cloud function→bigquery
 
-Deployment Steps:
+**Deployment Steps**
 
 1) Clone this git repo to your cloudshell env or Cloud SDK env.
 2) cd into the repo directory
@@ -34,4 +34,5 @@ Deployment Steps:
 ./setup_cloud_function.sh
 ./setup_iam.sh
 
-Demo Steps:
+**Demo Steps**
+TBD
