@@ -1,0 +1,623 @@
+[
+  {
+    "mode": "REPEATED",
+    "name": "entityRelations",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "entities",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REPEATED",
+        "name": "tables",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "REPEATED",
+            "name": "detectedLanguages",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "orientation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "vertices",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "y",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "x",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "normalizedVertices",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "boundingPoly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "content",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "startIndex",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "endIndex",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "textSegments",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "textAnchor",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "layout",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "lines",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "languageCode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "detectedLanguages",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "orientation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "vertices",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "y",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "x",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "normalizedVertices",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "boundingPoly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "content",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "startIndex",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "endIndex",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "textSegments",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "textAnchor",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "layout",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "paragraphs",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "transforms",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "languageCode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "detectedLanguages",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "orientation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "vertices",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "y",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "x",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "normalizedVertices",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "boundingPoly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "content",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "startIndex",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "endIndex",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "textSegments",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "textAnchor",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "layout",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "blocks",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "pageNumber",
+        "type": "INTEGER"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "unit",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "height",
+            "type": "FLOAT"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "width",
+            "type": "FLOAT"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "dimension",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "visualElements",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "mimeType",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "height",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "width",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "content",
+            "type": "BYTES"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "image",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "languageCode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "detectedLanguages",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "type",
+                "type": "INTEGER"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "detectedBreak",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "orientation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "vertices",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "y",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "x",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "normalizedVertices",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "boundingPoly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "content",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "startIndex",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "endIndex",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "textSegments",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "textAnchor",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "layout",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "tokens",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "confidence",
+            "type": "FLOAT"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "languageCode",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "detectedLanguages",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "formFields",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "confidence",
+            "type": "FLOAT"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "orientation",
+            "type": "INTEGER"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "y",
+                    "type": "FLOAT"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "x",
+                    "type": "FLOAT"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "normalizedVertices",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "y",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "x",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "vertices",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "boundingPoly",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "content",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "startIndex",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "endIndex",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "textSegments",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "textAnchor",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "layout",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "pages",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "textChanges",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "text",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mimeType",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "revisions",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "textStyles",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "uri",
+    "type": "STRING"
+  }
+]
