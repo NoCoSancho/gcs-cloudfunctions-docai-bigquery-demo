@@ -71,5 +71,6 @@ gcloud services enable cloudbuild.googleapis.com
 
 gcloud services enable documentai.googleapis.com
 
+gcloud services enable bigquery.googleapis.com
 
 
