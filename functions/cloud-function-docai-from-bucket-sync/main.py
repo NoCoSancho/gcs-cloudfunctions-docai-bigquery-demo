@@ -42,7 +42,7 @@ def main_func(event, context):
     gcs_doc_blob, gcs_doc_meta = get_gcs_doc(file_name, bucket_name)
 
     #Send doc to DAI parser and get results
-    doc_entities, hitl_operation_id, doc_results_json = process_doc(gcs_doc_blob, content_type, project_num, location, processor_id)
+    doc_entities, hitl_operation_id, doc_results_json = process_doc(gcs_doc_blob, content_type, project_num, location, processor_id, skip_human_review)
 
     #save raw extract results to GCS bucket
     save_extract_to_gcs(gcs_output_uri, doc_results_json, file_name, eventid, hitl_operation_id)
@@ -58,7 +58,7 @@ def get_gcs_doc(file_name, bucket_name):
 
     return file_blob, file_meta
 
-def process_doc(gcs_blob, content_type, project_number, location, processor_id):    
+def process_doc(gcs_blob, content_type, project_number, location, processor_id, skip_human_review):    
 
     documentai_client = documentai.DocumentProcessorServiceClient()
 
@@ -72,7 +72,7 @@ def process_doc(gcs_blob, content_type, project_number, location, processor_id):
     request = {
         "name": invoice_processor,
         "raw_document": document,
-        "skip_human_review": True
+        "skip_human_review": skip_human_review
     }
 
     results = documentai_client.process_document(request)
