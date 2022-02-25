@@ -18,10 +18,12 @@ processor_id = os.environ["PROCESSOR_ID"]
 gcs_output_uri = os.environ["GCS_OUTPUT_URI"]
 skip_human_review = os.environ["SKIP_HITL"]
 
+#HITL stuff not really relevant as not supported for OCR processor.
+#this is more of a stub
 if skip_human_review == 'False':
-    skip_human_review = False
+    skip_human_review = false
 else:
-    skip_humane_review = True
+    skip_humane_review = true
 
 def main_func(event, context):
 
@@ -42,7 +44,7 @@ def main_func(event, context):
     gcs_doc_blob, gcs_doc_meta = get_gcs_doc(file_name, bucket_name)
 
     #Send doc to DAI parser and get results
-    doc_entities, hitl_operation_id, doc_results_json = process_doc(gcs_doc_blob, content_type, project_num, location, processor_id, skip_human_review)
+    doc_entities, hitl_operation_id, doc_results_json = process_doc(gcs_doc_blob, content_type, project_num, location, processor_id)
 
     #save raw extract results to GCS bucket
     save_extract_to_gcs(gcs_output_uri, doc_results_json, file_name, eventid, hitl_operation_id)
@@ -58,7 +60,7 @@ def get_gcs_doc(file_name, bucket_name):
 
     return file_blob, file_meta
 
-def process_doc(gcs_blob, content_type, project_number, location, processor_id, skip_human_review):    
+def process_doc(gcs_blob, content_type, project_number, location, processor_id):    
 
     documentai_client = documentai.DocumentProcessorServiceClient()
 
