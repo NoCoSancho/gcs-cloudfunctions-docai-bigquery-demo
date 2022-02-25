@@ -74,7 +74,7 @@ def process_doc(gcs_blob, content_type, project_number, location, processor_id):
     request = {
         "name": invoice_processor,
         "raw_document": document,
-        "skip_human_review": 'True'
+        "skip_human_review": True
     }
 
     results = documentai_client.process_document(request)
