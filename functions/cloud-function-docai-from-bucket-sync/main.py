@@ -21,9 +21,9 @@ skip_human_review = os.environ["SKIP_HITL"]
 #HITL stuff not really relevant as not supported for OCR processor.
 #this is more of a stub
 if skip_human_review == 'False':
-    skip_human_review = false
+    skip_human_review = False
 else:
-    skip_humane_review = true
+    skip_humane_review = True
 
 def main_func(event, context):
 
