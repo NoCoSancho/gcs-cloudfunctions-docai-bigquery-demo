@@ -14,8 +14,9 @@ The cloud function will write the results to BigQuery
 Since the cloud functions make synchronous DocumentAI parser calls, the input pdf files must be 10 pages or less.  If you submit files larger than 10 pages you will encounter errors.
 
 **GCP Demo Architecture**
-Need to create diagram
-Source bucket→cloud function→docai→destination bucket→cloud function→bigquery
+
+![Demo Architecture-Document AI](https://user-images.githubusercontent.com/56175623/156226683-5e65cb5a-73fa-48ed-b4b4-c4e8014a7447.png)
+
 
 **Deployment Steps**
 
