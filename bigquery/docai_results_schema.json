@@ -19,9 +19,21 @@
       {
         "fields": [
           {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "confidence",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "languageCode",
+                "type": "STRING"
+              }
+            ],
             "mode": "REPEATED",
             "name": "detectedLanguages",
-            "type": "STRING"
+            "type": "RECORD"
           },
           {
             "fields": [
@@ -106,21 +118,9 @@
       {
         "fields": [
           {
-            "fields": [
-              {
-                "mode": "NULLABLE",
-                "name": "confidence",
-                "type": "FLOAT"
-              },
-              {
-                "mode": "NULLABLE",
-                "name": "languageCode",
-                "type": "STRING"
-              }
-            ],
             "mode": "REPEATED",
             "name": "detectedLanguages",
-            "type": "RECORD"
+            "type": "STRING"
           },
           {
             "fields": [
@@ -210,21 +210,9 @@
       {
         "fields": [
           {
-            "fields": [
-              {
-                "mode": "NULLABLE",
-                "name": "confidence",
-                "type": "FLOAT"
-              },
-              {
-                "mode": "NULLABLE",
-                "name": "languageCode",
-                "type": "STRING"
-              }
-            ],
             "mode": "REPEATED",
             "name": "detectedLanguages",
-            "type": "RECORD"
+            "type": "STRING"
           },
           {
             "fields": [
@@ -502,13 +490,13 @@
         "fields": [
           {
             "mode": "NULLABLE",
-            "name": "confidence",
-            "type": "FLOAT"
+            "name": "orientation",
+            "type": "INTEGER"
           },
           {
             "mode": "NULLABLE",
-            "name": "orientation",
-            "type": "INTEGER"
+            "name": "confidence",
+            "type": "FLOAT"
           },
           {
             "fields": [
